@@ -5,7 +5,13 @@
         "scope": "mattborghi.sciquant",
         "version": "0.0.1",
         "mainFile": "index.js",
-        "rootDir": "components/ui/notifications-button"
+        "rootDir": "mattborghi.sciquant/ui/notifications-button"
+    },
+    "ui/notifications-popper": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.js",
+        "rootDir": "mattborghi.sciquant/ui/notifications-popper"
     },
     "version": "1.0.50"
 }
