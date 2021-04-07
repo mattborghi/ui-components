@@ -36,7 +36,8 @@
       "dependencies": {
         "@material-ui/core": "4.11.3",
         "@material-ui/icons": "4.11.2",
-        "@testing-library/react": "11.2.6"
+        "@testing-library/react": "11.2.6",
+        "clsx": "1.1.1"
       },
       "peerDependencies": {
         "react": "16.13.1",
@@ -62,7 +63,9 @@
       /**
        * uncomment to apply the react environment on all components.
        **/
-      "teambit.react/react": {}
+      "teambit.react/react": {
+        "mdx": true
+      }
     }
   }
 }
