@@ -1,48 +1,21 @@
 ---
-labels: ["react", "jsx", "notifications-popper"]
-description: "A NotificationsPopper component."
+labels: ['react', 'typescript', 'notifications-popper']
+description: 'A NotificationsPopper component.'
 ---
 
-import react, { useState, useRef } from "react";
-import { NotificationsPopper } from "./notifications-popper";
+import { NotificationsPopper } from './notifications-popper';
 
 NotificationsPopper example:
 
 A simple NotificationsPopper component with some text
 
 Code Snippet:
-
 ```js
-<NotificationsPopper />
+<NotificationsPopper>hello from NotificationsPopper</NotificationsPopper>
 ```
 
-Live Playground:
 
-```js live=true
-() => {
-  const anchorRef = useRef(null);
-  const [open, setOpen] = useState(true);
-  function handleClose(event) {
-    if (anchorRef.current && anchorRef.current.contains(event.target)) {
-      return;
-    }
-    setOpen(false);
-  }
-  return (
-    <>
-      <button
-        ref={anchorRef}
-        onClick={() => setOpen((prevState) => !prevState)}
-      >
-        Open? : {open.toString()}
-      </button>
-      <NotificationsPopper
-        info="Notifications"
-        open={open}
-        handleClose={handleClose}
-        anchorRef={anchorRef}
-      />
-    </>
-  );
-};
+Live Playground:
+```js live
+<NotificationsPopper>hello from NotificationsPopper</NotificationsPopper>
 ```

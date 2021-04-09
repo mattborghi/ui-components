@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
@@ -13,49 +13,70 @@ import {
   ListSubheader,
   ListItemAvatar,
   ClickAwayListener,
-  Avatar
+  Avatar,
 } from "@material-ui/core";
 
-import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   subheader: {
     fontSize: 16,
-    fontWeight: "bold"
+    fontWeight: "bold",
   },
   list: {
     maxHeight: 250,
     overflow: "auto",
-    maxWidth: 300
+    maxWidth: 300,
   },
   scrollbar: {
     WebkitScrollbarTrack: {
-      background: "#ffffff"
+      background: "#ffffff",
     },
     WebkitScrollbarThumb: {
-      background: "#888"
-    }
+      background: "#888",
+    },
   },
   item: {
     "&:hover": {
-      backgroundColor: "rgb(85,85,85)"
-    }
-  }
+      backgroundColor: "rgb(85,85,85)",
+    },
+  },
 }));
 
-export const NotificationsPopper = ({ children, anchorRef, info, open, handleClose, ...rest }) => {
+export interface NotificationsPopperProps {
+  // extends Omit<React.HTMLAttributes<HTMLDivElement>, "children"> {
+  // extends Omit<PopperProps, "children"> {
+  info;
+  open;
+  anchorRef;
+  handleClose;
+}
+
+export const NotificationsPopper = ({
+  anchorRef,
+  info,
+  handleClose,
+  open,
+  ...rest
+}: NotificationsPopperProps) => {
   const classes = useStyles();
   return (
     <>
-      { anchorRef &&
-        <Popper open={open} transition disablePortal anchorEl={anchorRef.current}>
+      {anchorRef && (
+        <Popper
+          open={open}
+          transition
+          disablePortal
+          anchorEl={anchorRef.current}
+          {...rest}
+        >
           {({ TransitionProps, placement }) => (
             <Grow
               {...TransitionProps}
-              id="menu-list-grow"
+              // id="menu-list-grow"
               style={{
                 transformOrigin:
-                  placement === "bottom" ? "center top" : "center bottom"
+                  placement === "bottom" ? "center top" : "center bottom",
               }}
             >
               <Paper id="menu-list-grow">
@@ -71,7 +92,7 @@ export const NotificationsPopper = ({ children, anchorRef, info, open, handleClo
                     </MenuItem>
                     <ListItem className={classes.item}>
                       <ListItemAvatar>
-                        <Avatar className={classes.avatar}>MF</Avatar>
+                        <Avatar>MF</Avatar>
                       </ListItemAvatar>
                       <ListItemText
                         primary="New Follow"
@@ -80,7 +101,7 @@ export const NotificationsPopper = ({ children, anchorRef, info, open, handleClo
                     </ListItem>
                     <ListItem className={classes.item}>
                       <ListItemAvatar>
-                        <Avatar className={classes.avatar}>
+                        <Avatar>
                           <ThumbUpIcon fontSize="small" />
                         </Avatar>
                       </ListItemAvatar>
@@ -95,6 +116,7 @@ export const NotificationsPopper = ({ children, anchorRef, info, open, handleClo
             </Grow>
           )}
         </Popper>
-      }</>
-  )
+      )}
+    </>
+  );
 };
