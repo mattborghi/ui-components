@@ -3,14 +3,14 @@
 {
     "ui/notifications-button": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.2",
-        "mainFile": "index.js",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/notifications-button"
     },
     "ui/notifications-popper": {
         "scope": "mattborghi.sciquant",
         "version": "0.0.1",
-        "mainFile": "index.js",
+        "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/notifications-popper"
     },
     "version": "1.0.50"
