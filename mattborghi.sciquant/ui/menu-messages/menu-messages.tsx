@@ -1,17 +1,14 @@
 import React, { useState, useRef } from "react";
 
-import { NotificationsPopper } from "@mattborghi/sciquant.ui.notifications-popper";
-import { NotificationsButton } from "@mattborghi/sciquant.ui.notifications-button";
+import { MessagesPopper } from "@mattborghi/sciquant.ui.messages-popper";
+import { MessagesButton } from "@mattborghi/sciquant.ui.messages-button";
 
-export interface MenuNotificationsProps
+export interface MenuMessagesProps
   extends React.HTMLAttributes<HTMLDivElement> {
   info: string;
 }
 
-export const MenuNotifications = ({
-  info,
-  ...rest
-}: MenuNotificationsProps) => {
+export const MenuMessages = ({ info, ...rest }: MenuMessagesProps) => {
   const [open, setOpen] = useState(false);
   const anchorRef = useRef(null);
 
@@ -28,8 +25,8 @@ export const MenuNotifications = ({
   }
   return (
     <>
-      <NotificationsButton ref={anchorRef} onClick={handleToggle} />
-      <NotificationsPopper
+      <MessagesButton ref={anchorRef} onClick={handleToggle} />
+      <MessagesPopper
         open={open}
         info={info}
         anchorRef={anchorRef}
