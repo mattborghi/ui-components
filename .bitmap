@@ -37,5 +37,11 @@
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/notifications-popper"
     },
+    "ui/user-button": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/ui/user-button"
+    },
     "version": "1.0.50"
 }
