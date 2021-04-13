@@ -5,7 +5,7 @@ import { AppBar, Typography, Toolbar } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   appBar: ({ drawerWidth }: CustomAppbarProps) => ({
-    zIndex: theme.zIndex.drawer + 1,
+    zIndex: theme.zIndex.drawer,
     width: `calc(100% - ${drawerWidth})`,
     marginLeft: drawerWidth,
     height: 60,
