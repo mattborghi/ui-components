@@ -7,6 +7,12 @@
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/custom-appbar"
     },
+    "ui/left-appbar": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/ui/left-appbar"
+    },
     "ui/menu-messages": {
         "scope": "mattborghi.sciquant",
         "version": "0.0.1",
