@@ -1,7 +1,14 @@
 import React from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
-import { Stepper, Step, Typography, StepButton } from "@material-ui/core";
+import {
+  ListSubheader,
+  Grid,
+  Stepper,
+  Step,
+  Typography,
+  StepButton,
+} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   whole: {
@@ -34,21 +41,34 @@ export const VerticalStepper = ({
 }: VerticalStepperProps) => {
   const classes = useStyles();
   return (
-    <Stepper
-      // set activeStep to a very large number so all the steps are active and we can click on them.
-      activeStep={999}
-      orientation="vertical"
-      className={classes.whole}
+    <Grid
+      container
+      direction="column"
+      justify="flex-start"
+      alignItems="flex-start"
     >
-      {data &&
-        data.map(({ title, description }, index) => (
-          <Step key={title} completed={false}>
-            <StepButton onClick={() => onStepClick(index)}>
-              <Typography className={classes.label}>{title}</Typography>
-              <Typography className={classes.content}>{description}</Typography>
-            </StepButton>
-          </Step>
-        ))}
-    </Stepper>
+      <div style={{ height: 70 }} />
+      <ListSubheader component="div" disableSticky>
+        NAVIGATION PANEL
+      </ListSubheader>
+      <Stepper
+        // set activeStep to a very large number so all the steps are active and we can click on them.
+        activeStep={999}
+        orientation="vertical"
+        className={classes.whole}
+      >
+        {data &&
+          data.map(({ title, description }, index) => (
+            <Step key={title} completed={false}>
+              <StepButton onClick={() => onStepClick(index)}>
+                <Typography className={classes.label}>{title}</Typography>
+                <Typography className={classes.content}>
+                  {description}
+                </Typography>
+              </StepButton>
+            </Step>
+          ))}
+      </Stepper>
+    </Grid>
   );
 };
