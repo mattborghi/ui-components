@@ -7,6 +7,7 @@ importers:
       graphql: registry.npmjs.org/graphql/15.5.0
       react: registry.npmjs.org/react/17.0.2
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+      react-particles-js: registry.npmjs.org/react-particles-js/3.4.1_react@17.0.2
     devDependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
       '@testing-library/react': registry.npmjs.org/@testing-library/react/11.2.6_react-dom@17.0.2+react@17.0.2
@@ -25,7 +26,28 @@ importers:
       graphql: 15.5.0
       react: 17.0.2
       react-dom: 17.0.2
+      react-particles-js: 3.4.1
   components/ui/notifications-button:
+    specifiers: {}
+  mattborghi.sciquant/auth/created-user:
+    specifiers: {}
+  mattborghi.sciquant/auth/recover-password:
+    specifiers: {}
+  mattborghi.sciquant/auth/sign-in:
+    specifiers: {}
+  mattborghi.sciquant/auth/sign-up:
+    specifiers: {}
+  mattborghi.sciquant/extras/error:
+    specifiers: {}
+  mattborghi.sciquant/extras/loading:
+    specifiers: {}
+  mattborghi.sciquant/ui/background-particles:
+    specifiers: {}
+  mattborghi.sciquant/ui/custom-appbar:
+    specifiers: {}
+  mattborghi.sciquant/ui/footer:
+    specifiers: {}
+  mattborghi.sciquant/ui/left-appbar:
     specifiers: {}
   mattborghi.sciquant/ui/menu-messages:
     specifiers: {}
@@ -39,11 +61,15 @@ importers:
     specifiers: {}
   mattborghi.sciquant/ui/notifications-popper:
     specifiers: {}
+  mattborghi.sciquant/ui/project-page:
+    specifiers: {}
   mattborghi.sciquant/ui/settings-dialog:
     specifiers: {}
   mattborghi.sciquant/ui/user-button:
     specifiers: {}
   mattborghi.sciquant/ui/user-menu:
+    specifiers: {}
+  mattborghi.sciquant/ui/vertical-stepper:
     specifiers: {}
 lockfileVersion: 5.2
 packages:
@@ -828,6 +854,14 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/jss/-/jss-10.6.0.tgz
     version: 10.6.0
+  registry.npmjs.org/lodash/4.17.21:
+    dev: false
+    name: lodash
+    resolution:
+      integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz
+    version: 4.17.21
   registry.npmjs.org/loose-envify/1.4.0:
     dependencies:
       js-tokens: registry.npmjs.org/js-tokens/4.0.0
@@ -858,6 +892,15 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz
     version: 4.1.1
+  registry.npmjs.org/pathseg/1.2.0:
+    dev: false
+    name: pathseg
+    optional: true
+    resolution:
+      integrity: sha512-+pQS7lTaoVIXhaCW7R3Wd/165APzZHWzYVqe7dxzdupxQwebgpBaCmf0/XZwmoA/rkDq3qvzO0qv4d5oFVrBRw==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/pathseg/-/pathseg-1.2.0.tgz
+    version: 1.2.0
   registry.npmjs.org/popper.js/1.16.1-lts:
     dev: false
     name: popper.js
@@ -924,6 +967,21 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz
     version: 17.0.2
+  registry.npmjs.org/react-particles-js/3.4.1_react@17.0.2:
+    dependencies:
+      lodash: registry.npmjs.org/lodash/4.17.21
+      react: registry.npmjs.org/react/17.0.2
+      tsparticles: registry.npmjs.org/tsparticles/1.26.2
+    dev: false
+    id: registry.npmjs.org/react-particles-js/3.4.1
+    name: react-particles-js
+    peerDependencies:
+      react: ^16.0.0
+    resolution:
+      integrity: sha512-c3+vITUMN9RlgbERZYd9Kzvjmf49ENp07+9+NDLvE1Jf9euabrJi/q6gCCcv5foxGHBYjHnGs47Tusmrl0/+GQ==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/react-particles-js/-/react-particles-js-3.4.1.tgz
+    version: 3.4.1
   registry.npmjs.org/react-transition-group/4.4.1_react-dom@17.0.2+react@17.0.2:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
@@ -1016,3 +1074,14 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/tiny-warning/-/tiny-warning-1.0.3.tgz
     version: 1.0.3
+  registry.npmjs.org/tsparticles/1.26.2:
+    dev: false
+    name: tsparticles
+    optionalDependencies:
+      pathseg: registry.npmjs.org/pathseg/1.2.0
+    requiresBuild: true
+    resolution:
+      integrity: sha512-rUOd8lrpZwcEIa0Ft+QzS73Eorl4xo6neVDNGFPxakSOMbOPL7OHdzjbqZgoE93dbRBzJlguhRMGZiRRuH86gQ==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/tsparticles/-/tsparticles-1.26.2.tgz
+    version: 1.26.2
