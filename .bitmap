@@ -21,7 +21,7 @@
     },
     "auth/sign-up": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/auth/sign-up"
     },

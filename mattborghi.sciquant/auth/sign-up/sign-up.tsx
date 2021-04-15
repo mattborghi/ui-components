@@ -138,7 +138,9 @@ export const SignUp = ({
         </Typography>
         <form
           className={classes.form}
-          onSubmit={() => {
+          onSubmit={(e) => {
+            // prevent the default state when submit that is refreshing the component
+            e.preventDefault();
             onSubmit();
             setOpen(true);
           }}
