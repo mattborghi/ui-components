@@ -14,11 +14,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export interface MainPageProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface SignInPageProps extends React.HTMLAttributes<HTMLDivElement> {
   logo;
 }
 
-export const MainPage = ({ children, logo, ...rest }: MainPageProps) => {
+export const SignInPage = ({ children, logo, ...rest }: SignInPageProps) => {
   const classes = useStyles();
   return (
     <main className={classes.main}>

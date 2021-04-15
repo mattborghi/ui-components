@@ -7,12 +7,6 @@
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/auth/created-user"
     },
-    "auth/main-page": {
-        "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
-        "mainFile": "index.ts",
-        "rootDir": "mattborghi.sciquant/auth/main-page"
-    },
     "auth/recover-password": {
         "scope": "mattborghi.sciquant",
         "version": "0.0.1",
@@ -42,6 +36,12 @@
         "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/extras/loading"
+    },
+    "layouts/sign-in-page": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/layouts/sign-in-page"
     },
     "ui/background-particles": {
         "scope": "mattborghi.sciquant",
