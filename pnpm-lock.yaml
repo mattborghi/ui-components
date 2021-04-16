@@ -41,6 +41,8 @@ importers:
     specifiers: {}
   mattborghi.sciquant/extras/loading:
     specifiers: {}
+  mattborghi.sciquant/layouts/sign-in-page:
+    specifiers: {}
   mattborghi.sciquant/ui/background-particles:
     specifiers: {}
   mattborghi.sciquant/ui/custom-appbar:
@@ -56,6 +58,8 @@ importers:
   mattborghi.sciquant/ui/messages-button:
     specifiers: {}
   mattborghi.sciquant/ui/messages-popper:
+    specifiers: {}
+  mattborghi.sciquant/ui/monaco-editor:
     specifiers: {}
   mattborghi.sciquant/ui/notifications-button:
     specifiers: {}
