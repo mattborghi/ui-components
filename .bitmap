@@ -43,6 +43,12 @@
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/layouts/sign-in-page"
     },
+    "ui/accordion-item": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.0.7",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/ui/accordion-item"
+    },
     "ui/background-particles": {
         "scope": "mattborghi.sciquant",
         "version": "0.0.1",
@@ -108,6 +114,12 @@
         "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/notifications-popper"
+    },
+    "ui/preview-pattern": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.0.3",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/ui/preview-pattern"
     },
     "ui/project-page": {
         "scope": "mattborghi.sciquant",

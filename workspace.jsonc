@@ -39,7 +39,10 @@
         "@testing-library/react": "11.2.6",
         "clsx": "1.1.1",
         "graphql": "15.5.0",
-        "react-particles-js": "3.4.1"
+        "prop-types": "15.7.2",
+        "react-mathjax-preview": "2.2.3",
+        "react-particles-js": "3.4.1",
+        "react-syntax-highlighter": "15.4.3"
       },
       "peerDependencies": {
         "react": "17.0.2",
