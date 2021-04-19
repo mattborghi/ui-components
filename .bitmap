@@ -37,6 +37,12 @@
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/extras/loading"
     },
+    "layouts/project-pool": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.0.2",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/layouts/project-pool"
+    },
     "layouts/sign-in-page": {
         "scope": "mattborghi.sciquant",
         "version": "0.0.1",
@@ -63,7 +69,7 @@
     },
     "ui/custom-appbar": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.9",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/custom-appbar"
     },
@@ -78,6 +84,12 @@
         "version": "0.1.0",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/left-appbar"
+    },
+    "ui/list-projects": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.0.2",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/ui/list-projects"
     },
     "ui/maintenance": {
         "scope": "mattborghi.sciquant",

@@ -16,7 +16,6 @@ export const OnlyRightCustomAppbar = () => {
           width={100}
         />
       }
-      drawerWidth="25%"
       right={
         <UserButton
           user={{ firstName: "John", lastName: "Doe", username: "john.doe" }}
@@ -34,7 +33,6 @@ export const NoLogoCustomAppbar = () => {
           user={{ firstName: "John", lastName: "Doe", username: "john.doe" }}
         />
       }
-      drawerWidth="25%"
       right={
         <UserButton
           user={{ firstName: "John", lastName: "Doe", username: "john.doe" }}
@@ -56,7 +54,6 @@ export const BasicCustomAppbar = () => {
           width={100}
         />
       }
-      drawerWidth="25%"
       right={
         <UserButton
           user={{ firstName: "John", lastName: "Doe", username: "john.doe" }}

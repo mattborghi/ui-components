@@ -4,12 +4,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import { AppBar, Typography, Toolbar } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  appBar: ({ drawerWidth }: CustomAppbarProps) => ({
-    zIndex: theme.zIndex.drawer,
-    width: `calc(100% - ${drawerWidth})`,
-    marginLeft: drawerWidth,
+  appBar: {
     height: 60,
-  }),
+  },
   typography: {
     margin: "0 auto",
     transform: "translateX(50%)",
@@ -36,32 +33,30 @@ export interface CustomAppbarProps
   title?: string;
   right?;
   left?;
-  drawerWidth: string;
+  position?: string;
 }
 
 export const CustomAppbar = ({
   left,
   right,
-  drawerWidth,
+  position = "static",
   logo,
   title,
   ...rest
 }: CustomAppbarProps) => {
-  const classes = useStyles({ drawerWidth });
+  const classes = useStyles();
   return (
-    <AppBar className={classes.appBar} position="fixed" color="inherit">
+    <AppBar className={classes.appBar} position="static" color="inherit">
       <Toolbar>
         <div className={classes.left}>
           {logo && logo}
           {left && left}
         </div>
-
         {title && (
           <Typography className={classes.typography} variant="h6" noWrap>
             {title}
           </Typography>
         )}
-
         <div className={classes.right}>{right}</div>
       </Toolbar>
     </AppBar>
