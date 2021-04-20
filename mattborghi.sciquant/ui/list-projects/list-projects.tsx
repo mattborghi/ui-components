@@ -33,6 +33,8 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(1),
   },
   lista: {
+    background: theme.palette.background.paper,
+    height: "100%",
     maxHeight: "100%",
     overflow: "auto",
   },

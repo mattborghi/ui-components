@@ -16,10 +16,12 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: "100vh",
   },
   header: {
+    padding: theme.spacing(1),
     zIndex: theme.zIndex.modal + 1,
   },
   main: {
     flexGrow: 1,
+    padding: theme.spacing(1),
   },
 }));
 

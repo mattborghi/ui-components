@@ -42,6 +42,7 @@ export const VerticalStepper = ({
 }: VerticalStepperProps) => {
   const classes = useStyles();
   return (
+    // TODO: Use List instead of Grid/Step
     <Grid
       container
       direction="column"

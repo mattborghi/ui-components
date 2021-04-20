@@ -46,6 +46,36 @@ export const BasicProjectPool = () => {
   );
 };
 
+export const PaddingProjectPool = () => {
+  const header = (
+    <AppBar position="static">
+      <Typography variant="h3">Header</Typography>
+    </AppBar>
+  );
+  const leftpane = (
+    <div style={{ background: "cyan", minHeight: "100%" }}>
+      <h2 style={{ margin: 0 }}>LeftPane</h2>
+    </div>
+  );
+  const main = (
+    <div
+      style={{
+        minHeight: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        background: "#424242",
+      }}
+    />
+  );
+  return (
+    <ProjectPool header={header} leftpane={leftpane}>
+      {main}
+    </ProjectPool>
+  );
+};
+
 export const CustomProjectPool = () => {
   const projects = {
     projects: [

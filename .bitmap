@@ -39,7 +39,7 @@
     },
     "layouts/project-pool": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.5",
+        "version": "0.0.8",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/layouts/project-pool"
     },
@@ -87,7 +87,7 @@
     },
     "ui/list-projects": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.2",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/list-projects"
     },
@@ -171,7 +171,7 @@
     },
     "ui/vertical-stepper": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/vertical-stepper"
     },
