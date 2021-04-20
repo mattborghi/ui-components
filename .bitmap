@@ -39,7 +39,7 @@
     },
     "layouts/project-pool": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.8",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/layouts/project-pool"
     },
@@ -57,7 +57,7 @@
     },
     "ui/accordion-item": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.7",
+        "version": "0.0.8",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/accordion-item"
     },
@@ -147,7 +147,7 @@
     },
     "ui/project-page": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.2",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/project-page"
     },

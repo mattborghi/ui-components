@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 30,
   },
   title: {
-    color: "grey",
     paddingBottom: "20px",
   },
   button: {
@@ -70,24 +69,30 @@ export const ProjectPage = ({
           {secondaryLogo && <img src={secondaryLogo} height="50" width="200" />}
         </li>
         <li className={classes.item}>
-          <Typography className={classes.title}>Version {version}</Typography>
+          <Typography color="textSecondary" className={classes.title}>Version {version}</Typography>
         </li>
         <li className={classes.item}>
           <Button
+            color="inherit"
             className={classes.button}
             onClick={onNewProject}
             startIcon={<CreateNewFolderIcon />}
           >
-            <Typography className={classes.text}>New Project</Typography>
+            <Typography color="inherit" className={classes.text}>
+             New Project
+             </Typography>
           </Button>
         </li>
         <li className={classes.item}>
           <Button
+            color="inherit"
             className={classes.button}
             onClick={onOpenProject}
             startIcon={<FolderIcon />}
           >
-            <Typography className={classes.text}>Open Project</Typography>
+            <Typography color="inherit" className={classes.text}>
+              Open Project
+            </Typography>
           </Button>
         </li>
       </ul>

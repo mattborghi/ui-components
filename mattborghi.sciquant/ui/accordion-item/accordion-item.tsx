@@ -12,6 +12,9 @@ import MathJax from "react-mathjax-preview";
 import { PreviewPattern } from "@mattborghi/sciquant.ui.preview-pattern";
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    textAlign: "initial",
+  },
   heading: {
     fontSize: 15,
   },
@@ -65,7 +68,7 @@ export const AccordionItem = ({
 }: AccordionItemProps) => {
   const classes = useStyles();
   return (
-    <div {...rest}>
+    <div className={classes.root} {...rest}>
       <AccordionDetails className={classes.details}>
         <div className={classes.column}>
           <Typography className={classes.heading}>{title}</Typography>
