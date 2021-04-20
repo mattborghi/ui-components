@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: "bold",
     textAlign: "left",
   },
+  toolbar: theme.mixins.toolbar,
 }));
 
 export interface VerticalStepperProps
@@ -47,7 +48,7 @@ export const VerticalStepper = ({
       justify="flex-start"
       alignItems="flex-start"
     >
-      <div style={{ height: 70 }} />
+      <div className={classes.toolbar} />
       <ListSubheader component="div" disableSticky>
         NAVIGATION PANEL
       </ListSubheader>

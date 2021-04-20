@@ -26,12 +26,15 @@ const useStyles = makeStyles((theme) => ({
 export interface ProjectPoolProps extends React.HTMLAttributes<HTMLDivElement> {
   header;
   leftpane;
+  /**  Hide LeftPane */
+  hide?: boolean;
 }
 
 export const ProjectPool = ({
   children,
   header,
   leftpane,
+  hide = false,
   ...rest
 }: ProjectPoolProps) => {
   const classes = useStyles();
@@ -45,16 +48,18 @@ export const ProjectPool = ({
         // justify="flex-start"
         className={classes.grid}
       >
-        <Hidden smDown>
-          <Grid item sm={2} className={classes.leftpane}>
-            {leftpane}
-          </Grid>
-        </Hidden>
+        {!hide && (
+          <Hidden smDown>
+            <Grid item sm={2} className={classes.leftpane}>
+              {leftpane}
+            </Grid>
+          </Hidden>
+        )}
         <Grid
           item
           container
           sm
-          md={10}
+          md={!hide ? 10 : 12}
           direction="column"
           justify="flex-start"
           alignItems="stretch"

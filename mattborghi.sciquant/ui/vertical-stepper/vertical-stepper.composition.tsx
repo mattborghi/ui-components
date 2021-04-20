@@ -11,3 +11,11 @@ export const BasicVerticalStepper = () => {
     <VerticalStepper data={data} onStepClick={() => console.log("click!")} />
   );
 };
+
+export const EmptyVerticalStepper = () => {
+  const data = [];
+  return (
+    <VerticalStepper data={data} onStepClick={() => console.log("click!")} />
+  );
+};
+
