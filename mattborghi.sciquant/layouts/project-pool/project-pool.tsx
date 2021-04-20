@@ -15,7 +15,9 @@ const useStyles = makeStyles((theme) => ({
   leftpane: {
     maxHeight: "100vh",
   },
-  header: {},
+  header: {
+    zIndex: theme.zIndex.modal + 1,
+  },
   main: {
     flexGrow: 1,
   },
