@@ -52,3 +52,24 @@ export const OnErrorListProjects = () => {
     />
   );
 };
+
+export const WrapListProjects = () => {
+  const data = {
+    projects: [
+      { id: "1", title: "Very Long Text Lorem Ipsum ASD" },
+      { id: "123", title: "Another Project" },
+    ],
+  };
+  return (
+    <div style={{ width: "20%", border: "5px solid grey" }}>
+      <ListProjects
+        onOpen={(p) => console.log(`Opening project: ${p.title}`)}
+        data={data}
+        loading={false}
+        error={false}
+        onRename={(p) => console.log(`Renaming project: ${p.title}`)}
+        onDelete={(p) => console.log(`Deleting project: ${p.title}`)}
+      />
+    </div>
+  );
+};

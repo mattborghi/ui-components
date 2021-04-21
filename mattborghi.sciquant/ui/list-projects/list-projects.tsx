@@ -29,7 +29,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
   },
   text: {
-    wordWrap: "break-word",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+    overflow: "hidden",
     marginLeft: theme.spacing(1),
   },
   lista: {
@@ -95,9 +97,16 @@ export const ListProjects = ({
               <FolderIcon />
             </Avatar>
             <ListItemText
-              primary={project.title}
-              secondary={"~/Projects/" + project.title + "/"}
-              className={classes.text}
+              primary={
+                <Typography className={classes.text}>
+                  {project.title}
+                </Typography>
+              }
+              secondary={
+                <Typography className={classes.text}>
+                  {"~/Projects/" + project.title + "/"}
+                </Typography>
+              }
             />
             <ListItemSecondaryAction
               className={classes.listItemSecondaryAction}

@@ -39,7 +39,7 @@
     },
     "layouts/project-pool": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.10",
+        "version": "0.0.11",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/layouts/project-pool"
     },
@@ -85,9 +85,15 @@
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/left-appbar"
     },
+    "ui/linear-loader": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/ui/linear-loader"
+    },
     "ui/list-projects": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/list-projects"
     },
@@ -126,6 +132,12 @@
         "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/mini-app-bar"
+    },
+    "ui/model-created": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/ui/model-created"
     },
     "ui/notifications-button": {
         "scope": "mattborghi.sciquant",
