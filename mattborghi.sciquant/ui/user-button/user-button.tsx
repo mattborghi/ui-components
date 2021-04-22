@@ -7,6 +7,7 @@ import {
   ListItem,
   ListItemText,
   ListItemAvatar,
+  Typography,
   Avatar,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
@@ -62,10 +63,16 @@ export const UserButton = forwardRef(
       }
       return (
         <ListItemText
-          primaryTypographyProps={{ color: "textPrimary" }}
-          secondaryTypographyProps={{ color: "textSecondary" }}
-          primary={primary}
-          secondary="Sr. Quant Analyst"
+          primary={
+            <Typography color="textPrimary" noWrap>
+              {primary}
+            </Typography>
+          }
+          secondary={
+            <Typography color="textSecondary" noWrap>
+              {user.job ? user.job : ""}
+            </Typography>
+          }
         />
       );
     };

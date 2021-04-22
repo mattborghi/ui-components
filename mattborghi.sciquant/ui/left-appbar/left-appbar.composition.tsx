@@ -38,3 +38,17 @@ export const LeftButtonAppbar = () => {
     </>
   );
 };
+
+
+export const WrapButtonAppbar = () => {
+  return (
+    <div style={{ width: 150, border: "5px solid black" }}>
+      <LeftAppbar
+        toggleSidebar={false}
+        onLeftToggle={() => null}
+        onRightToggle={() => null}
+        onGoHome={() => null}
+      />
+    </div>
+  );
+};

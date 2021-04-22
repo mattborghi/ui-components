@@ -98,12 +98,12 @@ export const ListProjects = ({
             </Avatar>
             <ListItemText
               primary={
-                <Typography className={classes.text}>
+                <Typography color="textPrimary" className={classes.text}>
                   {project.title}
                 </Typography>
               }
               secondary={
-                <Typography className={classes.text}>
+                <Typography color="textSecondary" className={classes.text}>
                   {"~/Projects/" + project.title + "/"}
                 </Typography>
               }

@@ -1,29 +1,17 @@
 import React from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
-import { AppBar, Typography, Toolbar } from "@material-ui/core";
+import { AppBar, AppBarProps, Typography, Toolbar, Grid, Hidden } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
     height: 60,
   },
   typography: {
-    margin: "0 auto",
-    transform: "translateX(50%)",
+    textTransform: "uppercase",
   },
-  right: {
-    position: "absolute",
-    left: "auto",
-    right: 0,
-    display: "flex",
-    orientation: "row",
-  },
-  left: {
-    position: "absolute",
-    right: "auto",
-    left: "initial",
-    display: "flex",
-    orientation: "row",
+  center:   {
+    textAlign: "center",
   },
 }));
 
@@ -33,7 +21,7 @@ export interface CustomAppbarProps
   title?: string;
   right?;
   left?;
-  position?: string;
+  position?: AppBarProps["position"];
 }
 
 export const CustomAppbar = ({
@@ -42,22 +30,37 @@ export const CustomAppbar = ({
   position = "static",
   logo,
   title,
-  ...rest
 }: CustomAppbarProps) => {
   const classes = useStyles();
   return (
-    <AppBar className={classes.appBar} position="static" color="inherit">
+    <AppBar className={classes.appBar} position={position} color="inherit">
       <Toolbar>
-        <div className={classes.left}>
-          {logo && logo}
-          {left && left}
-        </div>
-        {title && (
-          <Typography className={classes.typography} variant="h6" noWrap>
-            {title}
-          </Typography>
-        )}
-        <div className={classes.right}>{right}</div>
+        <Grid container justify="space-between" alignItems="center" wrap="nowrap">
+          {logo && (
+            <Hidden smDown>
+            <Grid item md={1}>
+              {logo}
+            </Grid>
+            </Hidden>
+          )}
+          {left && (
+            <Grid item md={2}>
+              {left}
+            </Grid>
+          )}
+          {title && (
+            <Grid item md className={classes.center}>
+              <Typography className={classes.typography} variant="h6" noWrap>
+                {title}
+              </Typography>
+            </Grid>
+          )}
+          {right && (
+            <Grid container item md={5} justify="flex-end">
+              {right}
+            </Grid>
+          )}
+        </Grid>
       </Toolbar>
     </AppBar>
   );
