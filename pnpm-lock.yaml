@@ -3,8 +3,11 @@ importers:
     dependencies:
       '@material-ui/core': registry.npmjs.org/@material-ui/core/4.11.3_d8837eed98748ff5a1dd894fdd80cd72
       '@material-ui/icons': registry.npmjs.org/@material-ui/icons/4.11.2_ef80c726793852b8acaca4a05c381df5
+      '@material-ui/lab': registry.npmjs.org/@material-ui/lab/4.0.0-alpha.57_ef80c726793852b8acaca4a05c381df5
       clsx: registry.npmjs.org/clsx/1.1.1
+      core-js: registry.npmjs.org/core-js/3.11.0
       graphql: registry.npmjs.org/graphql/15.5.0
+      indent-string: registry.npmjs.org/indent-string/5.0.0
       prop-types: registry.npmjs.org/prop-types/15.7.2
       react: registry.npmjs.org/react/17.0.2
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
@@ -21,12 +24,15 @@ importers:
       '@babel/runtime': 7.12.18
       '@material-ui/core': 4.11.3
       '@material-ui/icons': 4.11.2
+      '@material-ui/lab': 4.0.0-alpha.57
       '@testing-library/react': 11.2.6
       '@types/jest': ^26.0.22
       '@types/node': 12.20.4
       '@types/react': ^16.14.5
       clsx: 1.1.1
+      core-js: ^3.11.0
       graphql: 15.5.0
+      indent-string: 5.0.0
       prop-types: 15.7.2
       react: 17.0.2
       react-dom: 17.0.2
@@ -47,7 +53,13 @@ importers:
     specifiers: {}
   mattborghi.sciquant/extras/loading:
     specifiers: {}
+  mattborghi.sciquant/layouts/model-creator:
+    specifiers: {}
+  mattborghi.sciquant/layouts/project-pool:
+    specifiers: {}
   mattborghi.sciquant/layouts/sign-in-page:
+    specifiers: {}
+  mattborghi.sciquant/layouts/simple-centered:
     specifiers: {}
   mattborghi.sciquant/ui/accordion-item:
     specifiers: {}
@@ -57,7 +69,15 @@ importers:
     specifiers: {}
   mattborghi.sciquant/ui/footer:
     specifiers: {}
+  mattborghi.sciquant/ui/inputs-list:
+    specifiers: {}
   mattborghi.sciquant/ui/left-appbar:
+    specifiers: {}
+  mattborghi.sciquant/ui/linear-loader:
+    specifiers: {}
+  mattborghi.sciquant/ui/list-projects:
+    specifiers: {}
+  mattborghi.sciquant/ui/maintenance:
     specifiers: {}
   mattborghi.sciquant/ui/menu-messages:
     specifiers: {}
@@ -68,6 +88,8 @@ importers:
   mattborghi.sciquant/ui/messages-popper:
     specifiers: {}
   mattborghi.sciquant/ui/mini-app-bar:
+    specifiers: {}
+  mattborghi.sciquant/ui/model-created:
     specifiers: {}
   mattborghi.sciquant/ui/monaco-editor:
     specifiers: {}
@@ -153,7 +175,7 @@ packages:
       '@types/istanbul-reports': registry.npmjs.org/@types/istanbul-reports/3.0.0
       '@types/node': registry.npmjs.org/@types/node/12.20.4
       '@types/yargs': registry.npmjs.org/@types/yargs/15.0.13
-      chalk: registry.npmjs.org/chalk/4.1.0
+      chalk: registry.npmjs.org/chalk/4.1.1
     dev: true
     engines:
       node: '>= 10.14.2'
@@ -222,6 +244,35 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@material-ui/icons/-/icons-4.11.2.tgz
     version: 4.11.2
+  registry.npmjs.org/@material-ui/lab/4.0.0-alpha.57_ef80c726793852b8acaca4a05c381df5:
+    dependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@material-ui/core': registry.npmjs.org/@material-ui/core/4.11.3_d8837eed98748ff5a1dd894fdd80cd72
+      '@material-ui/utils': registry.npmjs.org/@material-ui/utils/4.11.2_react-dom@17.0.2+react@17.0.2
+      '@types/react': registry.npmjs.org/@types/react/16.14.5
+      clsx: registry.npmjs.org/clsx/1.1.1
+      prop-types: registry.npmjs.org/prop-types/15.7.2
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+      react-is: registry.npmjs.org/react-is/17.0.2
+    dev: false
+    engines:
+      node: '>=8.0.0'
+    id: registry.npmjs.org/@material-ui/lab/4.0.0-alpha.57
+    name: '@material-ui/lab'
+    peerDependencies:
+      '@material-ui/core': ^4.9.10
+      '@types/react': ^16.8.6 || ^17.0.0
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    resolution:
+      integrity: sha512-qo/IuIQOmEKtzmRD2E4Aa6DB4A87kmY6h0uYhjUmrrgmEAgbbw9etXpWPVXuRK6AGIQCjFzV6WO2i21m1R4FCw==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/@material-ui/lab/-/lab-4.0.0-alpha.57.tgz
+    version: 4.0.0-alpha.57
   registry.npmjs.org/@material-ui/styles/4.11.3_d8837eed98748ff5a1dd894fdd80cd72:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
@@ -446,7 +497,7 @@ packages:
     dependencies:
       '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
       '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.1
-      csstype: registry.npmjs.org/csstype/3.0.7
+      csstype: registry.npmjs.org/csstype/3.0.8
     dev: true
     name: '@types/react'
     resolution:
@@ -573,6 +624,19 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/chalk/-/chalk-4.1.0.tgz
     version: 4.1.0
+  registry.npmjs.org/chalk/4.1.1:
+    dependencies:
+      ansi-styles: registry.npmjs.org/ansi-styles/4.3.0
+      supports-color: registry.npmjs.org/supports-color/7.2.0
+    dev: true
+    engines:
+      node: '>=10'
+    name: chalk
+    resolution:
+      integrity: sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/chalk/-/chalk-4.1.1.tgz
+    version: 4.1.1
   registry.npmjs.org/character-entities-legacy/1.1.4:
     dev: false
     name: character-entities-legacy
@@ -675,6 +739,15 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.10.0.tgz
     version: 3.10.0
+  registry.npmjs.org/core-js/3.11.0:
+    dev: false
+    name: core-js
+    requiresBuild: true
+    resolution:
+      integrity: sha512-bd79DPpx+1Ilh9+30aT5O1sgpQd4Ttg8oqkqi51ZzhedMM1omD2e6IOF48Z/DzDCZ2svp49tN/3vneTK6ZBkXw==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/core-js/-/core-js-3.11.0.tgz
+    version: 3.11.0
   registry.npmjs.org/css-vendor/2.0.8:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
@@ -695,12 +768,21 @@ packages:
       tarball: https://registry.npmjs.org/csstype/-/csstype-2.6.16.tgz
     version: 2.6.16
   registry.npmjs.org/csstype/3.0.7:
+    dev: false
     name: csstype
     resolution:
       integrity: sha512-KxnUB0ZMlnUWCsx2Z8MUsr6qV6ja1w9ArPErJaJaF8a5SOWoHLIszeCTKGRGRgtLgYrs1E8CHkNSP1VZTTPc9g==
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/csstype/-/csstype-3.0.7.tgz
     version: 3.0.7
+  registry.npmjs.org/csstype/3.0.8:
+    dev: true
+    name: csstype
+    resolution:
+      integrity: sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/csstype/-/csstype-3.0.8.tgz
+    version: 3.0.8
   registry.npmjs.org/delegate/3.2.0:
     dev: false
     name: delegate
@@ -876,6 +958,16 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/indefinite-observable/-/indefinite-observable-2.0.1.tgz
     version: 2.0.1
+  registry.npmjs.org/indent-string/5.0.0:
+    dev: false
+    engines:
+      node: '>=12'
+    name: indent-string
+    resolution:
+      integrity: sha512-m6FAo/spmsW2Ab2fU35JTYwtOKa2yAwXSwgjSv1TJzh4Mh7mC3lzAOVLBprb72XsTrgkEIsl7YrFNAiDiRhIGg==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/indent-string/-/indent-string-5.0.0.tgz
+    version: 5.0.0
   registry.npmjs.org/is-alphabetical/1.0.4:
     dev: false
     name: is-alphabetical
@@ -921,7 +1013,7 @@ packages:
     version: 1.1.3
   registry.npmjs.org/jest-diff/26.6.2:
     dependencies:
-      chalk: registry.npmjs.org/chalk/4.1.0
+      chalk: registry.npmjs.org/chalk/4.1.1
       diff-sequences: registry.npmjs.org/diff-sequences/26.6.2
       jest-get-type: registry.npmjs.org/jest-get-type/26.3.0
       pretty-format: registry.npmjs.org/pretty-format/26.6.2

@@ -3,189 +3,207 @@
 {
     "auth/created-user": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/auth/created-user"
     },
     "auth/recover-password": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/auth/recover-password"
     },
     "auth/sign-in": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.2",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/auth/sign-in"
     },
     "auth/sign-up": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.3",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/auth/sign-up"
     },
     "extras/error": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/extras/error"
     },
     "extras/loading": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/extras/loading"
     },
+    "layouts/model-creator": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.0.2",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/layouts/model-creator"
+    },
     "layouts/project-pool": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.11",
+        "version": "0.0.19",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/layouts/project-pool"
     },
     "layouts/sign-in-page": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/layouts/sign-in-page"
     },
     "layouts/simple-centered": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.2",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/layouts/simple-centered"
     },
     "ui/accordion-item": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.8",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/accordion-item"
     },
     "ui/background-particles": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/background-particles"
     },
     "ui/custom-appbar": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.10",
+        "version": "0.0.17",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/custom-appbar"
     },
     "ui/footer": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.2",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/footer"
     },
+    "ui/inputs-list": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.0.6",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/ui/inputs-list"
+    },
     "ui/left-appbar": {
         "scope": "mattborghi.sciquant",
-        "version": "0.1.0",
+        "version": "0.1.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/left-appbar"
     },
     "ui/linear-loader": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/linear-loader"
     },
     "ui/list-projects": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.5",
+        "version": "0.0.8",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/list-projects"
     },
     "ui/maintenance": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/maintenance"
     },
     "ui/menu-messages": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/menu-messages"
     },
     "ui/menu-notifications": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.2",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/menu-notifications"
     },
     "ui/messages-button": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/messages-button"
     },
     "ui/messages-popper": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/messages-popper"
     },
     "ui/mini-app-bar": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.3",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/mini-app-bar"
     },
     "ui/model-created": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/model-created"
     },
     "ui/notifications-button": {
         "scope": "mattborghi.sciquant",
-        "version": "0.1.0",
+        "version": "0.1.4",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/notifications-button"
     },
     "ui/notifications-popper": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/notifications-popper"
     },
     "ui/preview-pattern": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.3",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/preview-pattern"
     },
     "ui/project-page": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.4",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/project-page"
     },
     "ui/settings-dialog": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/settings-dialog"
     },
     "ui/user-button": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/user-button"
     },
     "ui/user-menu": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/user-menu"
     },
+    "ui/vertical-drawer": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/ui/vertical-drawer"
+    },
     "ui/vertical-stepper": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.4",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/vertical-stepper"
     },
-    "version": "1.0.50"
+    "version": "1.0.62"
 }
