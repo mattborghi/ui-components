@@ -45,7 +45,7 @@
     },
     "layouts/project-pool": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.19",
+        "version": "0.0.20",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/layouts/project-pool"
     },
@@ -61,6 +61,18 @@
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/layouts/simple-centered"
     },
+    "themes/set-theme": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/themes/set-theme"
+    },
+    "themes/toggle-theme": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/themes/toggle-theme"
+    },
     "ui/accordion-item": {
         "scope": "mattborghi.sciquant",
         "version": "0.0.10",
@@ -75,7 +87,7 @@
     },
     "ui/custom-appbar": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.17",
+        "version": "0.0.18",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/custom-appbar"
     },
@@ -117,7 +129,7 @@
     },
     "ui/menu-messages": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.5",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/menu-messages"
     },
@@ -135,7 +147,7 @@
     },
     "ui/messages-popper": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/messages-popper"
     },
