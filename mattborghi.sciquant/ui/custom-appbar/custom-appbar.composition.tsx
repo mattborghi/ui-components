@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { CustomAppbar } from "./custom-appbar";
 
 import { UserButton } from "@mattborghi/sciquant.ui.user-button";
 import { MenuMessages } from "@mattborghi/sciquant.ui.menu-messages";
 import { MenuNotifications } from "@mattborghi/sciquant.ui.menu-notifications";
+import { ToggleTheme } from "@mattborghi/sciquant.themes.toggle-theme";
 
 // sets the Component preview in gallery view
 export const OnlyRightCustomAppbar = () => {
@@ -131,5 +132,32 @@ export const OverloadRightCustomAppbar = () => {
       }
       title="Title"
     />
+  );
+};
+
+export const ThemingCustomAppbar = () => {
+  return (
+    <ToggleTheme>
+      <CustomAppbar
+        logo={
+          <img
+            src={
+              "https://global-uploads.webflow.com/5e157547d6f791d34ea4e2bf/5e203eaed5d2b00c172c6fe5_linkedin-logo.svg"
+            }
+            height={50}
+            width={100}
+          />
+        }
+        right={
+          <UserButton
+            user={{
+              firstName: "John",
+              lastName: "Doe",
+              username: "john.doe",
+            }}
+          />
+        }
+      />
+    </ToggleTheme>
   );
 };
