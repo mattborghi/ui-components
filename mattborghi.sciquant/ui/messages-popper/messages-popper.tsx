@@ -47,7 +47,6 @@ export interface MessagesPopperProps {
   anchorRef;
   handleClose;
 }
-// extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const MessagesPopper = ({
   anchorRef,
@@ -70,7 +69,6 @@ export const MessagesPopper = ({
           {({ TransitionProps, placement }) => (
             <Grow
               {...TransitionProps}
-              // id="menu-list-grow"
               style={{
                 transformOrigin:
                   placement === "bottom" ? "center top" : "center bottom",

@@ -8,7 +8,7 @@ export interface MenuMessagesProps
   info: string;
 }
 
-export const MenuMessages = ({ info, ...rest }: MenuMessagesProps) => {
+export const MenuMessages = ({ info }: MenuMessagesProps) => {
   const [open, setOpen] = useState(false);
   const anchorRef = useRef(null);
 
