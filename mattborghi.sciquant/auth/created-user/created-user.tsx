@@ -9,14 +9,18 @@ import {
   DialogContent,
   DialogContentText,
   DialogTitle,
+  Typography,
 } from "@material-ui/core";
 
 import VerifiedUserTwoTone from "@material-ui/icons/VerifiedUserTwoTone";
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    margin: theme.spacing(1),
-    // backgroundColor: theme.palette.secondary.main
+    paddingRight: theme.spacing(1),
+  },
+  title: {
+    display: "flex",
+    alignItems: "center",
   },
 }));
 
@@ -38,9 +42,11 @@ export const CreatedUser = ({
       open={open}
       disableBackdropClick={true} // don't allow to close window by clicking outside
     >
-      <DialogTitle>
-        <VerifiedUserTwoTone className={classes.avatar} />
-        New Account
+      <DialogTitle disableTypography classes={{ root: classes.title }}>
+        <VerifiedUserTwoTone fontSize="small" className={classes.avatar} />
+        <Typography variant="h6">
+          New Account
+        </Typography>
       </DialogTitle>
       <DialogContent>
         <DialogContentText>
@@ -48,7 +54,7 @@ export const CreatedUser = ({
         </DialogContentText>
       </DialogContent>
       <DialogActions>
-        <Button color="primary" variant="contained" onClick={onGoBack}>
+        <Button color="default" variant="contained" onClick={onGoBack}>
           Login
         </Button>
       </DialogActions>
