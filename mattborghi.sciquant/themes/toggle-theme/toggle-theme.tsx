@@ -11,7 +11,7 @@ export function ToggleTheme({ children }: ToggleThemeProps) {
   return (
     <>
       <button onClick={() => setDarkTheme((prev) => !prev)}>
-        Toggle theme
+        Current Theme: {darkTheme ? "dark" : "light"}
       </button>
       <SetTheme darkTheme={darkTheme}>{children}</SetTheme>
     </>
