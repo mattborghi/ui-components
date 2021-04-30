@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
   },
   item: {
     "&:hover": {
-      backgroundColor: "rgb(85,85,85)",
+      opacity: 0.8,
     },
   },
 }));
@@ -73,7 +73,6 @@ export const NotificationsPopper = ({
           {({ TransitionProps, placement }) => (
             <Grow
               {...TransitionProps}
-              // id="menu-list-grow"
               style={{
                 transformOrigin:
                   placement === "bottom" ? "center top" : "center bottom",
