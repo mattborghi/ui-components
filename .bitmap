@@ -99,7 +99,7 @@
     },
     "ui/github": {
         "scope": "mattborghi.sciquant",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/github"
     },
