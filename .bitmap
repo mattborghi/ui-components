@@ -97,6 +97,12 @@
         "mainFile": "index.ts",
         "rootDir": "mattborghi.sciquant/ui/footer"
     },
+    "ui/github": {
+        "scope": "mattborghi.sciquant",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "mattborghi.sciquant/ui/github"
+    },
     "ui/inputs-list": {
         "scope": "mattborghi.sciquant",
         "version": "0.0.6",
